@@ -306,6 +306,16 @@
                     height: 70px;
                 }
             }
+
+            @media (max-width: 479px) {
+                .planet-jupiter,
+                .planet-uranus,
+                .planet-mars,
+                .planet-earth,
+                .glow-ring {
+                    animation: none !important;
+                }
+            }
         </style>
     </head>
 
@@ -357,7 +367,7 @@
             </div>
         </div>
 
-        <script>
+        <script type="text/javascript">
             // Create starfield
             const starsContainer = document.getElementById('stars');
             for (let i = 0; i < 200; i++) {
